@@ -1,0 +1,52 @@
+package anb.developers.com.easyqrmaker.helpers.util;
+
+import android.app.AlertDialog;
+import android.content.Context;
+import android.graphics.Typeface;
+import android.view.LayoutInflater;
+
+import anb.developers.com.easyqrmaker.databinding.ProgresssDialogLayoutBinding;
+
+
+
+
+public class ProgressDialogUtil {
+
+    private static ProgressDialogUtil sInstance;
+    private AlertDialog mAlertDialog;
+
+    private ProgressDialogUtil() {
+
+    }
+
+    public static ProgressDialogUtil on() {
+        if (sInstance == null) {
+            sInstance = new ProgressDialogUtil();
+        }
+
+        return sInstance;
+    }
+
+    public void showProgressDialog(Context context) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+
+        ProgresssDialogLayoutBinding binding =
+                ProgresssDialogLayoutBinding.inflate(LayoutInflater.from(context),
+                        null, false);
+
+        binding.textViewMessage.setTypeface(null, Typeface.NORMAL);
+
+        builder.setCancelable(false);
+        builder.setView(binding.getRoot());
+
+        mAlertDialog = builder.create();
+        mAlertDialog.show();
+    }
+
+    public void hideProgressDialog() {
+        if (mAlertDialog != null) {
+            mAlertDialog.dismiss();
+            mAlertDialog = null;
+        }
+    }
+}
