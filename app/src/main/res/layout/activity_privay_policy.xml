@@ -6,16 +6,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <anb.developers.com.easyqrmaker.helpers.widget.BaseStatusBar
-            android:id="@+id/status_bar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gradient_title_bar_primary_color_and_accent_color"
-            app:layout_constraintBottom_toTopOf="@+id/toolbar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="spread_inside" />
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -24,10 +14,9 @@
             android:background="@drawable/gradient_title_bar_primary_color_and_accent_color"
             android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
             app:contentInsetStartWithNavigation="@dimen/margin_0"
-            app:layout_constraintBottom_toTopOf="@+id/text_view_play_sound"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/status_bar"
+            app:layout_constraintTop_toTopOf="parent"
             app:title="@string/privacy_policy" />
 
         <ScrollView

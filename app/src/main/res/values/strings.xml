@@ -2,11 +2,6 @@
     <!--App Essentials-->
     <string name="app_name">QR|Barcode maker</string>
     <string name="file_provider_authority" translatable="false">anb.developers.com.easyqrmaker.fileprovider</string>
-    <string name="admob_app_id">ca-app-pub-6869651497929012~3799167103</string>
-    <string name="admob_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="admob_test_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="admob_test_interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="admob_interstitial_ad_unit_id">ca-app-pub-6869651497929012/8650849168</string>
 
     <!--Essentials-->
     <string name="please_wait">Please Wait…</string>
