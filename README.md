@@ -1,5 +1,7 @@
 # QR | Bar code Maker & Scanner
 
+QR | Bar code Maker & Scanner Android app made in Android Studio Java using zxing library
+
 [Download from playstore](https://play.google.com/store/apps/details?id=anb.developers.com.easyqrmaker)
 
 Screenshots
